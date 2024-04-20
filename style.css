@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Archivo+Black&family=Bebas+Neue&family=Chakra+Petch:wght@300&family=Changa&family=Croissant+One&family=Dosis:wght@200;300;400;500&family=Handlee&family=Indie+Flower&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@100;200&family=Kenia&family=Merienda&family=Orbitron&family=Oswald:wght@300;400&family=Passion+One:wght@400;700;900&family=Poppins:wght@200&family=Roboto&family=Roboto+Slab:wght@300;400;500;600&family=Satisfy&family=Source+Code+Pro:ital,wght@1,200;1,300&family=Teko:wght@500;600;700&display=swap');
+@font-face {
+  font-family: digital;
+  src: url(./fonts/Digital\ Dismay.otf);
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+
+  
+}
+
+
+.container
+{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(6deg, rgba(0,0,0,1) 0%, rgba(55,29,107,1) 46%, rgba(127,71,237,1) 100%);
+}
+
+.container .clock
+{
+  position: relative;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.378);
+  font-weight: 500;
+  max-width: 380px;
+  min-width: 350;
+  width: 80%;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  box-shadow: 0 30px 45px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  font-family: digital;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+@media (max-width: 450px)
+{   
+      
+.container .clock
+{
+    width: 70%;
+    height: 40%;
+    font-size: 60px;
+}
+
+}
+
+
