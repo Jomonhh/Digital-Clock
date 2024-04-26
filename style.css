@@ -30,7 +30,7 @@
 {
   position: relative;
   color: white;
-  background-color: rgba(0, 0, 0, 0.378);
+  background-color: rgba(0, 0, 0, 0.638);
   font-weight: 500;
   max-width: 380px;
   min-width: 350;
@@ -42,6 +42,7 @@
   align-items: center;
   font-size: 90px;
   box-shadow: 0 30px 45px rgba(0, 0, 0, 0.9);
+  border: 5px solid #fff;
   border-radius: 15px;
   font-family: digital;
   z-index: 1;
