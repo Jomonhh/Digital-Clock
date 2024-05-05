@@ -1,68 +1,141 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Archivo+Black&family=Bebas+Neue&family=Chakra+Petch:wght@300&family=Changa&family=Croissant+One&family=Dosis:wght@200;300;400;500&family=Handlee&family=Indie+Flower&family=Inter:wght@300;400;500&family=Josefin+Sans:wght@100;200&family=Kenia&family=Merienda&family=Orbitron&family=Oswald:wght@300;400&family=Passion+One:wght@400;700;900&family=Poppins:wght@200&family=Roboto&family=Roboto+Slab:wght@300;400;500;600&family=Satisfy&family=Source+Code+Pro:ital,wght@1,200;1,300&family=Teko:wght@500;600;700&display=swap');
-@font-face {
-  font-family: digital;
-  src: url(./fonts/Digital\ Dismay.otf);
-}
-
-*
-{
+*{
   margin: 0;
   padding: 0;
-  color: white;
+  font-family: 'Poppins',sans-serif;
   box-sizing: border-box;
-
-  
 }
-
-
-.container
-{
+.containerr{
   width: 100%;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(6deg, rgba(0,0,0,1) 0%, rgba(55,29,107,1) 46%, rgba(127,71,237,1) 100%);
+  background-color: #000;
+  color: #ffffff;
 }
-
-.container .clock
-{
+.container{
+  width: 800px;
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.clock{
+  width: 100%;
+  height: 100%;
+  background: rgba(234, 0, 255, 0.252);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(70px);
+}
+ .container::before{
+  content: '';
+  width: 180px;
+  height: 180px;
+  background: #f41b75;
+  border-radius: 5px;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: -1;
+}
+.container::after{
+  content: '';
+  width: 180px;
+  height: 180px;
+  background: #419aff;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+  z-index: -1;
+}
+.clock span{
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
   position: relative;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.638);
-  font-weight: 500;
-  max-width: 380px;
-  min-width: 350;
-  width: 80%;
-  height: 120px;
-  margin: 0 auto;
+}
+.clock span::after{
+  font-size: 16px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#hrs::after{
+  content: 'HOURS';
+}
+#min::after{
+  content: 'MINS';
+}
+#sec::after{
+  content: 'SEC';
+}
+
+/* Date */
+
+.date{
+  width: 100%;
+  height: 10vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 90px;
-  box-shadow: 0 30px 45px rgba(0, 0, 0, 0.9);
-  border: 5px solid #fff;
-  border-radius: 15px;
-  font-family: digital;
-  z-index: 1;
 }
-
-
-
-
-
-
-
-@media (max-width: 450px)
-{   
-      
-.container .clock
-{
-    width: 70%;
-    height: 40%;
-    font-size: 60px;
+.top{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  top: 100%;
+  background: rgba(234, 0, 255, 0.252);
+  padding: 10px 20px;
+  border-radius: 5px;
+  backdrop-filter: blur(80px);
 }
+@media only screen and (max-width:1200px){
+  .container{
+    width: 500px;
+    height: 140px;
+  }
+  .container::before{
+    width: 140px;
+    height: 140px;
+    margin-left: 15px;
+  }
+  .container::after{
+    width: 140px;
+    height: 140px;
+    margin-left: 15px;
+  }
+ 
+}
+@media only screen and (max-width:600px){
+  .container{
+    width: 300px;
+    height: 120px;
+  }
+  .container::before{
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+  }
+  .container::after{
+    width: 120px;
+    height: 120px;
+    margin-left: 15px;
+  }
+  .clock span{
+    font-size: 55px;
+    width: 50px;
+  }
+  .clock span::after{
+    font-size: 12px;
+    left: 70%;
+  }
+
 
 }
 
