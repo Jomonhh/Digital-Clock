@@ -114,8 +114,8 @@
 }
 @media only screen and (max-width:600px){
   .container{
-    width: 300px;
-    height: 120px;
+    width: 270px;
+    height: 115px;
   }
   .container::before{
     width: 120px;
