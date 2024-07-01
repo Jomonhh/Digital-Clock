@@ -10,6 +10,3 @@ To get started with this project, run this in your command prompt/Terminal
   git clone https://github.com/Jomonhh/Digital-Clock.git
 ```
 and that's all you need to get started!
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
