@@ -4,7 +4,7 @@
 Live <a href="https://jomonh.github.io/Digital-Clock/">here</a>
 ## Getting started
 
-To get started with this project, run this in your command prompt/Terminal 
+To clone this repository, run this in your command prompt/Terminal  
 
 ```bash
   git clone https://github.com/Jomonh/Digital-Clock.git
